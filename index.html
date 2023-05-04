@@ -74,6 +74,95 @@
             Order Service
           </button>
         </div>
+
+        <!-- Modal window -->
+
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="modal-btn" type="button" data-modal-close>
+              <svg class="modal-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script src="./js/animation.js"></script>
+            <script src="./js/modal.js"></script>
+
+            <strong class="title-form"
+              >Leave your contacts and we will call you back</strong
+            >
+            <form name="contact-form">
+              <label class="modal-form-lable" for="Name">Name</label>
+              <div class="modal-form-fild">
+                <input
+                  class="modal-form-input"
+                  type="text"
+                  name="Name"
+                  id="Name"
+                />
+                <svg class="icon-form" width="18" height="24">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+              </div>
+
+              <label class="modal-form-lable" for="Phone">Phone</label>
+              <div class="modal-form-fild">
+                <input
+                  class="modal-form-input"
+                  type="tel"
+                  name="Phone"
+                  id="Phone"
+                />
+                <svg class="icon-form" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+
+              <label class="modal-form-lable" for="Email">Email</label>
+              <div class="modal-form-fild">
+                <input
+                  class="modal-form-input"
+                  type="email"
+                  name="Email"
+                  id="Email"
+                />
+                <svg class="icon-form" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+
+              <label class="modal-form-lable" for="Comment">Comment</label>
+              <textarea
+                class="modal-form-massedge"
+                name="Comment"
+                id="Comment"
+                cols="30"
+                rows="10"
+                placeholder="Text input"
+              ></textarea>
+
+              <label class="modal-form-agreement">
+                <input class="modal-form-agreement-box" type="checkbox" />
+                <svg class="modal-form-agreement-icon" width="16" height="16">
+                  <use
+                    class="modal-form-agreement-unchek"
+                    href="./images/icons.svg#icon-Unchek"
+                  ></use>
+                  <use
+                    class="modal-form-agreement-check"
+                    href="./images/icons.svg#icon-Chek"
+                  ></use>
+                </svg>
+                <span class="modal-form-agreement-text">
+                  I accept the terms and conditions of the
+                  <a class="modal-form-policy" href="">Privacy Policy</a>
+                </span>
+              </label>
+
+              <button class="btn-modal-form" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
       </section>
 
       <!-- Особливості -->
@@ -546,23 +635,27 @@
             </li>
           </ul>
         </div>
+
+        <div class="subscribe">
+          <p class="text-subscribe">Subscribe</p>
+          <form class="search-email">
+            <label class="Email"></label>
+            <input
+              class="footer-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
+            <button class="bnt-subscribe">
+              Subscribe
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-airplane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-
-    <!-- Modal window -->
-
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="modal-btn" type="button" data-modal-close>
-          <svg class="modal-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/animation.js"></script>
-    <script src="./js/modal.js"></script>
   </body>
 </html>
